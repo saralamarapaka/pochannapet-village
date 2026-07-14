@@ -1,1 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>JANGAON DISTRICT - POCHANNAPET MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>JANGAON DISTRICT</h1>
+<h2>POCHANNAPET MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!-- 1 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🚌</div>
+
+<div class="info">
+<h3>Poc-PPT Bus Stand</h3>
+<p>Bus Stand</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.97932,76.21702"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 2 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+
+<div class="info">
+<h3>Poc-Primary School</h3>
+<p>School</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.99512,76.2165"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 3 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+
+<div class="info">
+<h3>Poc-Mee Seva</h3>
+<p>MeeSeva Center</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.96904,76.23543"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 4 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🌊</div>
+
+<div class="info">
+<h3>Poc-Lake</h3>
+<p>Lake</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.97932,76.21602"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 5 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏥</div>
+
+<div class="info">
+<h3>Poc-Primary Health Centre</h3>
+<p>Hospital</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.97831,76.21823"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 6 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🍽️</div>
+
+<div class="info">
+<h3>Poc-Hotel and Restaurant</h3>
+<p>Hotel/Restaurant</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.98005,76.21747"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 7 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">📮</div>
+
+<div class="info">
+<h3>Poc-Post Office</h3>
+<p>Post Office</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.97935,76.21858"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 8 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+
+<div class="info">
+<h3>Poc-Temple</h3>
+<p>Temple</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.9694,76.23354"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 9 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🥛</div>
+
+<div class="info">
+<h3>Poc-Milk Point</h3>
+<p>Milk Point</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.97883,76.2179"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+<!-- 10 -->
+
+<div class="place">
+<div class="left">
+<div class="icon">🏠</div>
+
+<div class="info">
+<h3>Poc-My Home</h3>
+<p>Residential</p>
+</div>
+
+</div>
+
+<a class="open-btn"
+href="https://www.google.com/maps?q=14.97376,76.22652"
+target="_blank">
+Open Map
+</a>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Jangaon District - Pochannapet Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+
+function searchPlaces() {
+
+let input = document.getElementById("search").value.toLowerCase();
+
+let places = document.getElementsByClassName("place");
+
+for (let i = 0; i < places.length; i++) {
+
+let text = places[i].innerText.toLowerCase();
+
+if (text.indexOf(input) > -1) {
+places[i].style.display = "flex";
+} else {
+places[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
